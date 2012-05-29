@@ -6,7 +6,7 @@
 # @see http://en.wikipedia.org/wiki/Expense Expenses
 #
 # @author Michael Bulat
-class Expense < Account
+class Expense < LedgerAccount
   
   # The credit balance for the account.
   # 

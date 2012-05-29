@@ -6,7 +6,7 @@
 # @see http://en.wikipedia.org/wiki/Asset Assets
 #
 # @author Michael Bulat
-class Asset < Account
+class Asset < LedgerAccount
   
   # The credit balance for the account.
   # 

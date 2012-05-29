@@ -1,6 +1,6 @@
 class Plutus < ActiveRecord::Migration
   def self.up
-    create_table :accounts do |t|
+    create_table :ledger_accounts do |t|
       t.string :name
       t.string :type
       t.boolean :contra
@@ -27,7 +27,7 @@ class Plutus < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :accounts
+    drop_table :ledger_accounts
     drop_table :transactions
   end
 end

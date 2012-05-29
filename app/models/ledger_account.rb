@@ -31,7 +31,7 @@
 # @see http://en.wikipedia.org/wiki/Debits_and_credits Debits, Credits, and Contra Accounts
 # 
 # @author Michael Bulat
-class Account < ActiveRecord::Base
+class LedgerAccount < ActiveRecord::Base
   
   validates_presence_of :type, :name
   
@@ -47,7 +47,7 @@ class Account < ActiveRecord::Base
   #
   # @return [BigDecimal] The decimal value balance of all accounts
   def self.trial_balance
-    unless self.new.class == Account
+    unless self.new.class == LedgerAccount
       raise(NoMethodError, "undefined method 'trial_balance'")
     else
       Asset.balance - (Liability.balance + Equity.balance + Revenue.balance - Expense.balance)

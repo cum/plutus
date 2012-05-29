@@ -1,4 +1,4 @@
-# This controller provides restful route handling for Accounts.
+# This controller provides restful route handling for LedgerAccounts.
 #
 # The controller supports ActiveResource, and provides for
 # HMTL, XML, and JSON presentation.
@@ -9,7 +9,7 @@
 # controller will inherit.
 # 
 # @author Michael Bulat
-class AccountsController < ApplicationController
+class LedgerAccountsController < ApplicationController
   unloadable
   
   # @example
@@ -17,7 +17,7 @@ class AccountsController < ApplicationController
   #   GET /accounts.xml
   #   GET /accounts.json
   def index
-    @accounts = Account.all
+    @accounts = LedgerAccount.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -31,7 +31,7 @@ class AccountsController < ApplicationController
   #   GET /accounts/1.xml
   #   GET /accounts/1.json
   def show
-    @account = Account.find(params[:id])
+    @account = LedgerAccount.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

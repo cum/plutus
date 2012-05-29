@@ -6,7 +6,7 @@
 # @see http://en.wikipedia.org/wiki/Liability_(financial_accounting) Liability
 #
 # @author Michael Bulat
-class Liability < Account
+class Liability < LedgerAccount
   
   # The credit balance for the account.
   # 

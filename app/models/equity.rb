@@ -6,7 +6,7 @@
 # @see http://en.wikipedia.org/wiki/Equity_(finance) Equity
 #
 # @author Michael Bulat
-class Equity < Account
+class Equity < LedgerAccount
   
   # The credit balance for the account.
   # 

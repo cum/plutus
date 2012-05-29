@@ -6,7 +6,7 @@
 # @see http://en.wikipedia.org/wiki/Revenue Revenue
 #
 # @author Michael Bulat
-class Revenue < Account
+class Revenue < LedgerAccount
   
   # The credit balance for the account.
   # 
